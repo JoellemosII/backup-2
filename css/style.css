@@ -1,0 +1,1110 @@
+/* esto es para subir a github :D 
+1) git add . 
+2) git commit -m "nombre"
+3) git push -u origin main
+*/
+:root{
+  --Amarillo :#DCF256;
+  --Celeste:#74C3EF;
+  --Fondo-remeras:#ECECDE;
+}
+/*Universales*/
+html {
+box-sizing: border-box;
+font-size: 62.5%;
+font-family: "Montserrat", sans-serif;
+}
+.bg__fondo{
+background-image: url(../img/Iconos/fondijo.png);
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+background-position: center ;
+background-size: 100% 100%;
+background-attachment: fixed;
+}
+body{
+font-size: 16px;
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+p{
+  font-size: 2rem;
+}
+ul{
+  text-decoration: none;
+  list-style: none;
+  display:flex;
+  gap: 13rem;
+}
+.classic, .exclusive{
+text-align: right;
+}
+/* Logo*/
+.logo{
+text-align: center;
+margin: 3rem ,0;
+background-color: #74C3EF;
+}
+/* Barra de navegacion*/
+.navbar{
+background-color: #DCF256;
+padding: 2rem;
+display: flex;
+justify-content: center;
+gap: 1rem;
+width: 100%;
+}
+.navbar li a{
+  font-size: 2rem;
+}
+.navbar__enlace{
+text-decoration: none;
+font-size: 2rem;
+gap: 3rem;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+.navbar__enlace:hover{
+cursor: pointer;
+background-color: white;
+}
+/* bloque de remeras*/
+.contenedor{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(3,33%); 
+grid-template-rows: 500px 600px;
+gap: 1rem;
+margin: 1rem;
+padding: .5rem;
+align-items: center;
+}
+.remera {
+background-color: #ECECDE;
+align-items: center;
+margin-left: 4rem;
+padding: 1rem;
+}
+.text{
+text-align: center;
+}
+.fotos{
+width: 19rem;
+height:19rem;
+}
+h2{
+  text-align: center;
+}
+
+/*Carrito*/
+.tienda{
+text-align: center;
+align-items: center;
+}
+.tienda div{
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  text-align: center;
+  padding-left: 50rem;
+}
+.boton{
+width: 19rem;
+height: 2rem;
+border-radius: 0.5rem;
+background-color: #74C3EF;
+text-decoration:none;
+text-align: center;
+}
+.boton:hover{
+cursor:pointer;
+background-color:var(--Amarillo);
+}
+/*Sobre nosotros*/
+.contenido{
+width: 50%;
+margin: auto;
+background-color: rgba(20, 20, 20, 0 .644);
+backdrop-filter: blur(9px);
+}
+.login{
+text-align: center;
+}
+/*barra de navegacion del index*/
+.barnav{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.barnav ul{
+  gap: 110rem;
+}
+/*Gift Cards*/
+.image{
+width: 26rem;
+height: 26rem;
+border-radius: 5%;
+}
+.card-1{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.classic{
+  text-align: center;
+  width: 400px;
+  height: 260px;
+  background-color: #DCF256;
+  border-radius: 10%;
+  position: relative;
+}
+.classic p {
+  font-size: 28px;
+  text-align: center;
+}
+.flecha{
+  width: 18rem;
+  height: 18rem;
+  position: absolute;
+  left: 43%;
+  bottom: 0%;
+  top: 58%;
+}
+.valor{
+  width: 110px;
+  height: 42px;
+  background-color: #ECECDE;
+  position: absolute;
+  left: 35%;
+  top: 2;
+  bottom: 3%;  
+}
+.card2{
+display: flex;
+justify-content: space-evenly;
+gap: 3rem;
+}
+.standar{
+  text-align: center;
+  width: 400px;
+  height: 260px;
+  background-color: #A0CBA2;
+  border-radius: 10%;
+  position: relative;
+}
+.standar p{
+  font-size: 28px;
+  text-align: center;
+}
+.flecha-2{
+  width: 18rem;
+  height: 18rem;
+  position: absolute;
+  left: 43%;
+  top: 108%;
+}
+.valor-2{
+  width: 110px;
+  height: 42px;
+  background-color: #ECECDE;
+  position: absolute;
+  left: 35%;
+  top: 2;
+  bottom: 3%;  
+}
+.exclusive{
+  text-align: center;
+  width: 400px;
+  height: 260px;
+  background-color: #3B73A8;
+  border-radius: 10%;
+  position: relative;
+}
+.exclusive p{
+  font-size: 28px;
+  text-align: center;
+  color: white;
+}
+.flecha-3{
+  width: 18rem;
+  height: 18rem;
+  position: absolute;
+  left: 43%;
+  top: 152%;
+}
+.valor-3{
+  width: 110px;
+  height: 42px;
+  background-color: #1e1d6e;
+  position: absolute;
+  left: 35%;
+  top: 2;
+  bottom: 3%; 
+}
+/*Footer*/
+ .footer{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+ }
+ .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    width: 8rem;
+    height: 8rem;
+ }
+  .iconos{
+  width: 50px;
+  height: 50px;
+  gap: 1rem;
+  }
+ .like{
+  text-align: center;
+ }
+  .redes {
+  background-color: #74C3EF;
+  }
+  .texto_redes{
+    text-align:left;
+    padding-top: 2rem;
+    padding-left: 0rem;
+  }
+  .div-1{
+    display:flex;
+    flex-direction: row;
+    gap:5rem;
+    padding-left: 2rem;
+    text-decoration: none;
+  }
+    .div-2{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    /*padding-left: 88rem;*/
+}
+  footer div{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 58rem;
+}
+  
+
+        /* 4K*/
+@media (max-width:2560px ){
+
+}
+      /* Monitor*/
+@media(max-width: 1920px){
+  .navbar{
+    font-size: 1rem;
+  }
+  .navbar li a{
+    font-size: 3rem; 
+  }
+    .contenedor{
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:590px 590px;
+    gap: 1rem;
+    width: 100%;
+  }
+    .imagenes{
+      padding-left: 11rem;
+    }
+    .remera{
+    background-color:#ECECDE;
+    align-items:center;
+  }
+    .fotos{/*bolsa*/
+    width:35rem;
+    height:35rem;
+  }
+    .image{/* gift*/
+    width:62rem;
+    height: 45rem;
+    border-radius:8%;
+    gap:1rem;
+  }
+    .barnav{
+    flex-direction:row;
+    gap: 4rem;
+  }
+    .barnav li a{
+      font-size: 2.4rem;
+    }
+    .barnav ul{
+      gap: 152rem;
+    }
+    .tienda{/*carrito */
+    text-align:center;
+    align-items:center;
+  }
+    .tienda div{
+      gap: 18rem;
+      text-align: center;
+      padding-left: 54rem;
+    }
+    .boton{
+    height: 4rem;
+    width:29rem;
+    border-radius:10%;
+    background-color:#74C3EF;
+    text-decoration:none;
+    gap: 18rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+    .iconos{
+    width:5rem;
+    height:5rem;
+    gap:8rem;
+  }
+    .card-1{
+    justify-content:space-evenly;
+    flex-direction: row;
+    gap:2rem;
+    padding-bottom: 3rem;
+  }
+    .classic{
+    text-align:center;
+    width:60rem;
+    height:35rem;
+    background-color:#DCF256;
+    border-radius:10%;
+    position:relative;
+  }
+    .classic p{
+    font-size:3.5rem;
+    text-align: center;
+  }
+    .flecha{
+    width:22rem;
+    height:35rem;
+    position:absolute;
+    left:44.5%;
+    bottom:1%;
+    top:35%;
+  }
+    .valor{
+    width:30rem;
+    height:5rem;
+    background-color:#ECECDE;
+    position: absolute;
+    left:23.5%;
+    top:65%;
+    bottom:1%;
+  }
+    .card2{
+    justify-content:space-evenly;
+    flex-direction: row;
+    gap: 3rem;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+  }
+    .standar{
+    text-align:center;
+    width:60rem;
+    height:35rem;
+    background-color:#A0CBA2;
+    border-radius:10%;
+    position:relative;
+  }
+    .standar p{
+    font-size:4rem;
+    text-align:center;
+  }
+    .flecha-2{
+    width:22rem;
+    height:35rem;
+    position:absolute;
+    left:43.5%;
+    top:84%;
+  }
+    .valor-2{
+    width:30rem;
+    height:5rem;
+    background-color:#A0CBA2;
+    position:absolute;
+    left:22%;
+    top:41%;
+    bottom:1%;
+  }
+    .exclusive{
+    text-align:center;
+    width:60rem;
+    height:35rem;
+    background-color:#3B73A8;
+    border-radius:10%;
+    position:relative;
+  }
+    .exclusive p{
+    font-size:3.5rem;
+    text-align:center;
+    color:white;
+  }
+    .flecha-3{
+    width:22rem;
+    height:35rem;
+    position:absolute;
+    left:45%;
+    top:137%;
+  }
+    .valor-3{
+    width:30rem;
+    height:5rem;
+    background-color:#1e1d6e;
+    position:absolute;
+    left:25%;
+    top:65%;
+    bottom:1%;
+  }	
+    .div-1{
+    gap:10rem;
+    padding-left: 4rem;
+    text-decoration: none;
+    padding-top: 10rem;
+  }
+    .div-2{
+    gap: 4rem;
+    align-items: center;
+    padding-left: 80rem;
+  }
+    .redes {
+    flex-direction: column;
+    align-items: normal;
+    padding:1rem;
+  }
+    .texto_redes{
+    text-align:center;
+      gap: 2rem;
+      padding-left: 1rem;
+}
+  footer, h2,p {
+  font-size: 3rem;
+}
+  @media(max-width:1440px){
+
+    .navbar{
+    font-size: 1.5rem;
+  }
+  .navbar li a{
+    font-size: 3rem; 
+  }
+    .contenedor{
+    grid-template-columns:repeat(3, 33%);
+    grid-template-rows:580px 580px;
+    gap: 1rem;
+    padding:0rem;
+    margin:0rem;
+    align-items:center;
+  }
+    .imagenes{
+      padding-left: 3rem;
+      margin-left: 0;
+    }
+    .remera{
+    background-color:#ECECDE;
+    align-items:center;
+  }
+    .fotos{
+    width:35rem;
+    height:35rem;
+  }
+    .image{
+    width:45rem;
+    height: 25rem;
+    border-radius:8%;
+    gap:1rem;
+  }
+    .barnav{
+    flex-direction:row;
+    gap: 2rem;
+  }
+    .barnav li a{
+      font-size: 2.4rem;
+    }
+    .barnav ul{
+      gap: 105rem;
+    }
+    .tienda{
+    text-align:center;
+    align-items:center;
+  }
+    .tienda div{
+      display: flex;
+      gap: 3rem;
+      text-align: center;
+      padding-left: 50rem;
+    }
+    .boton{
+    height: 2.2rem;
+    width:20rem;
+    border-radius:10%;
+    background-color:#74C3EF;
+    text-decoration:none;
+    gap: 8rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+    .iconos{
+    width:5rem;
+    height:5rem;
+    gap:5rem;
+  }
+    .card-1{
+    display:flex;
+    justify-content:space-evenly;
+    gap:2rem;
+    padding-bottom: 1rem;
+  }
+    .classic{
+    text-align:center;
+    width:40rem;
+    height:25rem;
+    background-color:#DCF256;
+    border-radius:10%;
+    position:relative;
+  }
+    .classic p{
+    font-size:3rem;
+    text-align: center;
+  }
+    .flecha{
+    width:20rem;
+    height:35rem;
+    position:absolute;
+    left:45%;
+    bottom:1%;
+    top:25%;
+  }
+    .valor{
+    width:22rem;
+    height:4rem;
+    background-color:#ECECDE;
+    position: absolute;
+    left:22.5%;
+    top:65%;
+    bottom:1%;
+  }
+    .card2{
+    justify-content:space-evenly;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
+    .standar{
+    text-align:center;
+    width:42rem;
+    height:25rem;
+    background-color:#A0CBA2;
+    border-radius:10%;
+    position:relative;
+  }
+    .standar p{
+    font-size:3rem;
+    text-align:center;
+  }
+    .flecha-2{
+    width:20rem;
+    height:35rem;
+    position:absolute;
+    left:43.5%;
+    top:65%;
+  }
+    .valor-2{
+    width:22rem;
+    height:4rem;
+    background-color:#A0CBA2;
+    position:absolute;
+    left:22%;
+    top:65%;
+    bottom:1%;
+  }
+    .exclusive{
+    text-align:center;
+    width:42rem;
+    height:25rem;
+    background-color:#3B73A8;
+    border-radius:10%;
+    position:relative;
+  }
+    .exclusive p{
+    font-size:3rem;
+    text-align:center;
+    color:white;
+  }
+    .flecha-3{
+    width:20rem;
+    height:35rem;
+    position:absolute;
+    left:43.5%;
+    top:105%;
+  }
+    .valor-3{
+    width:22rem;
+    height:4rem;
+    background-color:#1e1d6e;
+    position:absolute;
+    left:22%;
+    top:65%;
+    bottom:1%;
+  }	
+    .div-1{
+    gap:5rem;
+    padding-left: 2rem;
+    text-decoration: none;
+    padding-top: 10rem;
+  }
+    .div-2{
+    gap: 2rem;
+    align-items: center;
+    padding-left: 59rem;
+  }
+    .redes {
+    flex-direction: column;
+    align-items: normal;
+    padding:1rem;
+  }
+    .texto_redes{
+    text-align:center;
+    padding-left: 48rem;
+  }
+        @media(max-width:1024px){
+    .navbar{
+      font-size: 1rem;
+    }
+    .navbar li a{
+      font-size: 2.5rem; 
+    }
+      .contenedor{
+      grid-template-columns:repeat(3, 33%);
+      grid-template-rows:520px 520px;
+      gap: 1rem;
+      padding:0rem;
+      margin:0rem;
+      align-items:center;
+    }
+      .imagenes{
+        padding-left: 2rem;
+        width: 250px;
+        height: 250px;
+      }
+      .remera{
+      background-color:#ECECDE;
+      align-items:center;
+    }
+      .fotos{
+      width:35rem;
+      height:35rem;
+    }
+      .image{
+      width:35rem;
+      height: 25rem;
+      border-radius:8%;
+      gap:1rem;
+    }
+      .barnav{
+      flex-direction:row;
+      gap: 2rem;
+    }
+      .barnav li a{
+        font-size: 1.9rem;
+      }
+      .barnav ul{
+        gap: 73rem;
+      }
+      .tienda{
+      text-align:center;
+      align-items:center;
+    }
+      .tienda div{
+        gap: 3rem;
+        text-align: center;
+        padding-left: 20rem;
+      }
+      .boton{
+      height: 3rem;
+      width:25rem;
+      border-radius:10%;
+      background-color:#74C3EF;
+      text-decoration:none;
+      gap: 3rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+      .iconos{
+      width:5rem;
+      height:5rem;
+      gap:5rem;
+    }
+      .card-1{
+      justify-content:space-evenly;
+      gap:2rem;
+      padding-bottom: 3rem;
+    }
+      .classic{
+      text-align:center;
+      width:40rem;
+      height:25rem;
+      background-color:#DCF256;
+      border-radius:10%;
+      position:relative;
+    }
+      .classic p{
+      font-size:3rem;
+      text-align: center;
+    }
+      .flecha{
+      width:14rem;
+      height:25rem;
+      position:absolute;
+      left:40.5%;
+      bottom:1%;
+      top:35%;
+    }
+      .valor{
+      width:22rem;
+      height:4rem;
+      background-color:#ECECDE;
+      position: absolute;
+      left:22.5%;
+      top:65%;
+      bottom:1%;
+    }
+      .card2{
+      justify-content:space-evenly;
+      gap: 2rem;
+      padding-bottom: 3rem;
+    }
+      .standar{
+      text-align:center;
+      width:42rem;
+      height:25rem;
+      background-color:#A0CBA2;
+      border-radius:10%;
+      position:relative;
+    }
+    
+      .standar p{
+      font-size:3rem;
+      text-align:center;
+    }
+      .flecha-2{
+      width:14rem;
+      height:25rem;
+      position:absolute;
+      left:46.8%;
+      top:89%;
+    }
+      .valor-2{
+      width:22rem;
+      height:4rem;
+      background-color:#A0CBA2;
+      position:absolute;
+      left:22%;
+      top:65%;
+      bottom:1%;
+    }
+      .exclusive{
+      text-align:center;
+      width:42rem;
+      height:25rem;
+      background-color:#3B73A8;
+      border-radius:10%;
+      position:relative;
+    }
+      .exclusive p{
+      font-size:3rem;
+      text-align:center;
+      color:white;
+    }
+      .flecha-3{
+      width:14rem;
+      height:25rem;
+      position:absolute;
+      left:39.7%;
+      top:133%;
+    }
+      .valor-3{
+      width:22rem;
+      height:4rem;
+      background-color:#1e1d6e;
+      position:absolute;
+      left:22%;
+      top:65%;
+      bottom:1%;
+    }	
+      .div-1{
+      gap:5rem;
+      padding-left: 2rem;
+      text-decoration: none;
+      padding-top: 10rem;
+    }
+      .div-2{
+      gap: 2rem;
+      align-items: center;
+      padding-left: 59rem;
+    }
+      .footer{
+      background-color: #74C3EF;
+    }
+      .redes {
+      flex-direction: column;
+      align-items: normal;
+      padding:1rem;
+    }
+      .texto_redes{
+      text-align:center;
+      padding-left: 48rem;
+    }
+    footer div{
+      align-items: center;
+      gap: 3rem;
+      padding-left: 36rem;
+    }
+        @media(max-width:768px){
+          .navbar{
+            max-width: 78rem;
+            font-size: 10px;
+            padding: 0px;
+          }
+          .navbar li a{
+            font-size: 1.4rem; 
+          }
+            .contenedor{
+            grid-template-columns:repeat(3, 33%);
+            grid-template-rows:360px 320px;
+            gap: 1rem;
+            padding:0rem;
+            margin:0rem;
+            align-items:center;
+          }
+            .imagenes{
+              padding-right: 20px;
+              padding-left: 0px;
+              width: 210px;
+              height: 190px;
+            }
+            .remera{
+            background-color:#ECECDE;
+            align-items:center;
+          }
+          .remera p{
+            font-size: 1.4rem;
+          }
+            .fotos{
+            width:13rem;
+            height:13rem;
+          }
+          .fotos,h2,p{
+            font-size: 1.5rem;
+          }
+            .image{
+            width:20rem;
+            height: 15rem;
+            border-radius:8%;
+            gap:1rem;
+          }
+            .barnav{
+            flex-direction:row;
+            gap: 1rem;
+          }
+            .barnav li a{
+              font-size: 1.5rem;
+            }
+            .barnav ul{
+              gap: 50rem;
+            }
+            .tienda{
+            text-align:center;
+            align-items:center;
+          }
+            .tienda div{
+              gap: 1rem;
+              text-align: center;
+              padding-left: 22rem;
+            }
+            .boton{
+            height: 2rem;
+            width:15rem;
+            border-radius:10%;
+            background-color:#74C3EF;
+            text-decoration:none;
+            gap: 3rem;
+            text-align: center;
+            font-size: 1.4rem;
+          }
+            .iconos{
+            width:3rem;
+            height:3rem;
+            gap:5rem;
+          }
+            .card-1{
+            justify-content:space-evenly;
+            gap:2rem;
+            padding-bottom: 1rem;
+          }
+            .classic{
+            text-align:center;
+            width:20rem;
+            height:15rem;
+            background-color:#DCF256;
+            border-radius:10%;
+            position:relative;
+          }
+            .classic p{
+            font-size:2rem;
+            text-align: center;
+          }
+            .flecha{
+            width:14rem;
+            height:25rem;
+            position:absolute;
+            left:40.5%;
+            bottom:1%;
+            top:20%;
+          }
+            .valor{
+            width:12rem;
+            height:3rem;
+            background-color:#ECECDE;
+            position: absolute;
+            left:22.5%;
+            top:65%;
+            bottom:1%;
+          }
+            .card2{
+            justify-content:space-evenly;
+            gap: 2rem;
+            padding-bottom: 1rem;
+          }
+            .standar{
+            text-align:center;
+            width:20rem;
+            height:15rem;
+            background-color:#A0CBA2;
+            border-radius:10%;
+            position:relative;
+          }
+            .standar p{
+            font-size:2rem;
+            text-align:center;
+          }
+            .flecha-2{
+            width:14rem;
+            height:25rem;
+            position:absolute;
+            left:42%;
+            top:65%;
+          }
+            .valor-2{
+            width:22rem;
+            height:4rem;
+            background-color:#A0CBA2;
+            position:absolute;
+            left:22%;
+            top:65%;
+            bottom:1%;
+          }
+            .exclusive{
+            text-align:center;
+            width: 20rem;
+            height:15rem;
+            background-color:#3B73A8;
+            border-radius:10%;
+            position:relative;
+          }
+            .exclusive p{
+            font-size:2rem;
+            text-align:center;
+            color:white;
+          }
+            .flecha-3{
+            width:14rem;
+            height:25rem;
+            position:absolute;
+            left:40.7%;
+            top:103%;
+          }
+            .valor-3{
+            width:12rem;
+            height:3rem;
+            background-color:#1e1d6e;
+            position:absolute;
+            left:22%;
+            top:70%;
+            bottom:1%;
+          }	
+            .div-1{
+            gap:3rem;
+            padding-left: 2rem;
+            text-decoration: none;
+            padding-top: 10rem;
+          }
+            .div-2{
+            gap: 2rem;
+            align-items: center;
+            padding-left: 28rem;
+          }
+            .footer{
+            background-color: #74C3EF;
+          }
+            .redes {
+            flex-direction: column;
+            align-items: normal;
+            padding:1rem;
+          }
+            .texto_redes{
+            text-align:center;
+            padding-left: 48rem;
+          }
+          footer div{
+            align-items: center;
+            gap: 3rem;
+            padding-left: 26rem;
+          }
+          .login img ,.logo img{
+            width:200px ;
+            height: 80px;
+          }
+        }
+  }
+}
+}
+
+      /* Tablet*/
+@media (max-width: 768px ){    
+
+}
+
+      /* Mobile L*/
+@media(max-width: 425px){
+
+}
+
+      /*Mobile M*/
+@media(max-width: 375px){
+
+}
+
+     /*Mobile S*/
+@media(max-width: 320px){
+
+}
+
+/*medidas de los mq
+4k = 2560 px
+Laptop L = 1440 px
+Laptop = 1024 px 
+Tablet = 768 px 
+Movil L = 425 px 
+Mobile M = 375 px 
+Mobile S = 320 px.
